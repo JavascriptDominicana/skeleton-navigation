@@ -1,6 +1,8 @@
-# aurelia-skeleton-navigation
+# aurelia-skeleton-navigation (Grunt + Bower)
 
-This skeleton is part of the [Aurelia](http://www.aurelia.io/) platform. It sets up a standard navigation-style app using gulp to build your ES6 code with the 6to5 compiler. Karma/Jasmine testing is also configured.
+This is a fork of the original skeleton navigation for [Aurelia](http://www.aurelia.io/). The objective here is to replace [Gulp](http://gulpjs.com/) with [Grunt](http://gruntjs.com/) and [JSPM](http://jspm.io/) with [Bower](http://bower.io/). So far we have implement bower, and work on implementing grunt has started.
+
+This skeleton sets up a standard navigation-style app using gulp to build your ES6 code with the 6to5 compiler. Karma/Jasmine testing is also configured.
 
 > To keep up to date on [Aurelia](http://www.aurelia.io/), please visit and subscribe to [the official blog](http://blog.durandal.io/). If you have questions, we invite you to join us on [our Gitter Channel](https://gitter.im/aurelia/discuss).
 
@@ -19,18 +21,16 @@ To run the app, follow these steps.
   ```shell
   npm install -g gulp
   ```
-4. Ensure that [jspm](http://jspm.io/) is installed. If you need to install it, use the following command:
+4. Ensure that [bower](http://bower.io/) is installed. If you need to install it, use the following command:
 
   ```shell
-  npm install -g jspm
+  npm install -g bower
   ```
-  > **Note:** jspm queries GitHub to install semver packages, but GitHub has a rate limit on anonymous API requests. It is advised that you configure jspm with your GitHub credentials in order to avoid problems. You can do this by executing `jspm endpoint config github` and following the prompts.
-5. Install the client-side dependencies with jspm:
+5. Install the client-side dependencies with bower:
 
   ```shell
-  jspm install -y
+  bower install
   ```
-  >**Note:** Windows users, if you experience an error of "unknown command unzip" you can solve this problem by doing `npm install -g unzip` and then re-running `jspm install`.
 6. To run the app, execute the following command:
 
   ```shell
@@ -41,7 +41,7 @@ To run the app, follow these steps.
 > Note: At present there is a bug in the HTMLImports polyfill which only occurs on IE. We have submitted a pull request to the team with the fix. In the mean time, if you want to test on IE, you can work around the issue by explicitly adding a script tag before you load system.js. The script tag should look something like this (be sure to confirm the version number):
 
 ```html
-<script src="jspm_packages/github/webcomponents/webcomponentsjs@0.5.2/HTMLImports.js"></script>
+<script src="assets/bower/webcomponentsjs/HTMLImports.min.js"></script>
 ```
 
 ## Running The Unit Tests
@@ -56,9 +56,9 @@ To run the unit tests, first ensure that you have followed the steps above in or
 2. Install Aurelia libs for test visibility:
 
 ```shell
-jspm install aurelia-framework
-jspm install aurelia-http-client
-jspm install aurelia-router
+bower install aurelia-framework
+bower install aurelia-http-client
+bower install aurelia-router
 ```
 3. You can now run the tests with this command:
 
