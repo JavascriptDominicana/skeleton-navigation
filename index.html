@@ -2,7 +2,8 @@
 <html>
   <head>
     <title>Aurelia</title>
-    <link rel="stylesheet" type="text/css" href="jspm_packages/npm/font-awesome@4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/bower/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/bower/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
   </head>
   <body aurelia-app>
@@ -11,7 +12,9 @@
       <i class="fa fa-spinner fa-spin"></i>
     </div>
 
-    <script src="jspm_packages/system.js"></script>
+    <script src="assets/bower/jquery/dist/jquery.min.js"></script>
+    <script src="assets/bower/es6-module-loader/dist/es6-module-loader.js"></script>
+    <script src="assets/bower/system.js/dist/system.js"></script>
     <script src="config.js"></script>
     <script>
       System.baseUrl = 'dist'; //NOTE: You can move this into the config.js file, if you like.
