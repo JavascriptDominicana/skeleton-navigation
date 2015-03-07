@@ -22,7 +22,8 @@ System.config({
     'aurelia-templating-resources': 'assets/bower/aurelia-templating-resources/dist/system/index',
     'aurelia-templating-router': 'assets/bower/aurelia-templating-router/dist/system/index',
     'bootstrap': 'assets/bower/bootstrap/dist/js/bootstrap.min',
-    'core-js': 'node_modules/core-js/index'
+    'core-js': 'node_modules/core-js/index',
+    'jquery': 'assets/bower/jquery/dist/jquery.min'
   }
 });
 

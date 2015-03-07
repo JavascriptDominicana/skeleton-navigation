@@ -1,4 +1,5 @@
 import {Router} from 'aurelia-router';
+import jquery from 'jquery';
 import bootstrap from 'bootstrap';
 
 export class App {

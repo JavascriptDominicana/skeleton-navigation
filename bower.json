@@ -22,6 +22,7 @@
     "system.js": "~0.14.1",
     "es6-module-loader": "~0.14.0",
     "font-awesome": "~4.3.0",
-    "aurelia-http-client": "~0.5.5"
+    "aurelia-http-client": "~0.5.5",
+    "bootstrap": "~3.3.2"
   }
 }
